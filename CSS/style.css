@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    
+}
+body{
+    background:linear-gradient(rgb(201, 79, 79),rgb(44, 28, 28),rgb(8, 8, 8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: aliceblue;
+    
+   
+
+}
+/*keyframe images*/
+.coração{
+    border-radius: 100%;
+    width: 60px;
+    margin-top: -5rem;
+    margin-left: 54rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.monster{
+width: 50px;
+border-radius: 100%;
+animation: Monster 5s infinite linear;
+}
+@keyframes Monster{
+    from{
+    margin-left: 0;
+    }
+    to{
+        margin-left: 95%;
+
+    }
+}
+
+
+.batimento{
+
+    width: 150px;
+    border: 5px solid rgb(0, 0, 0) ;
+    height: 100px;
+    box-shadow: 5px red;
+    
+}
+
+
+/*    FIM     */
+
+
+.hide{
+    display: none !important;
+}
+
+.container{
+    min-width: 400px;
+    min-height: 400px;
+    background: linear-gradient(black,rgb(10, 9, 9),rgb(68, 3, 3));
+    padding:2rem;
+    border-radius: 50px;
+}
+/* IMC form */
+#calc-container h2{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.form-control label{
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+    color: rgb(180, 64, 64) ;
+}
+
+.form-control input{
+    padding: 1rem 0.5rem;
+    border-radius: 30px;
+}
+.action-control{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    gap: 1rem;
+
+}
+button{
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    background-color: crimson ;
+    border: none;
+    color: aliceblue;
+    cursor: pointer;
+    opacity: 0.9;
+    flex: 1;
+
+}
+button:hover{
+    opacity: 10;
+   
+}
+.clear-btn{
+    background: linear-gradient(black, rgb(68, 62, 62));
+}
+
+
+/* table */
+
+#result-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#imc-number{
+    font-size: 2.4rem;
+    margin-bottom: 0.6rem;
+}
+#imc-info{
+    font-size: 1.4rem;
+    color:rgb(176, 196, 212)
+}
+#result-container h3{
+    margin-top: 1rem;
+    color: rgb(188, 213, 235);
+}
+#imc-table{
+    margin: 1.5rem 0;
+    font-size: 0.8rem;
+}
+.table-header{
+    font-size: bold;
+    color: rgb(153, 151, 151);
+    
+}
+.table-header,
+.table-data{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid crimson;
+    text-align: center;
+
+
+}
+.table-header h4,
+.table-data p{
+flex: 5;
+}
+.table-header h4:nth-child(7),
+.table-data p:nth-child(7){
+    max-width: 80px;
+}
+
+#back-btn{
+    align-self: center;
+    border-radius: 50px;
+}
+
+.good{
+    color: green;
+}
+.low{
+    color: yellow;
+}
+.medium{
+    color: orange;
+}
+.high{
+    color: red;
+}
